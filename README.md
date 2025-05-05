@@ -1,6 +1,6 @@
 # BookDate - Aplicación de Reserva de Citas
 
-Este es un proyecto de inicio de Next.js creado con Firebase Studio para la aplicación **BookDate**. BookDate permite a los clientes reservar citas y a los administradores gestionar la disponibilidad y las reservas.
+Este es un proyecto de inicio de Next.js creado por Saúl Rocha. BookDate permite a los clientes reservar citas y a los administradores gestionar la disponibilidad y las reservas.
 
 ## Cómo Empezar
 
@@ -21,25 +21,11 @@ Para iniciar el entorno de desarrollo, sigue estos pasos:
     NEXT_PUBLIC_FIREBASE_APP_ID="TU_APP_ID"
     NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID="TU_MEASUREMENT_ID" # Opcional
 
-    # Clave API de Google Generative AI (si usas Genkit)
-    GOOGLE_GENAI_API_KEY="TU_GOOGLE_GENAI_API_KEY"
-    ```
-    Reemplaza `TU_*` con tus valores reales de Firebase y Google AI.
-
 3.  **Ejecutar la aplicación de desarrollo:**
     ```bash
     npm run dev
     ```
     Esto iniciará la aplicación Next.js en `http://localhost:9002` (o el puerto configurado).
-
-4.  **Ejecutar Genkit (si es necesario):**
-    Si estás utilizando funcionalidades de GenAI, ejecuta el servidor de desarrollo de Genkit en otra terminal:
-    ```bash
-    npm run genkit:dev
-    ```
-    o para recarga automática:
-    ```bash
-    npm run genkit:watch
     ```
 
 ## Estructura del Proyecto
@@ -87,7 +73,6 @@ Para iniciar el entorno de desarrollo, sigue estos pasos:
 -   React Query (para gestión del estado del servidor)
 -   date-fns (para manipulación de fechas)
 -   Lucide React (iconos)
--   Genkit (opcional, para funcionalidades de IA Generativa)
 
 ## Próximos Pasos / Mejoras
 
