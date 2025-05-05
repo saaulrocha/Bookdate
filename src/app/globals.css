@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 214 67% 98%; /* Off-white */
+    --foreground: 215 28% 17%; /* Dark grayish blue */
+    --card: 214 67% 98%; /* Same as background */
+    --card-foreground: 215 28% 17%; /* Dark */
+    --popover: 214 67% 98%; /* Same as background */
+    --popover-foreground: 215 28% 17%; /* Dark */
+    --primary: 195 35% 77%; /* Light Teal */
+    --primary-foreground: 215 28% 17%; /* Dark for contrast on teal */
+    --secondary: 214 30% 95%; /* Slightly darker off-white */
+    --secondary-foreground: 215 28% 17%; /* Dark */
+    --muted: 214 30% 92%; /* Slightly darker than secondary */
+    --muted-foreground: 215 15% 45%; /* Muted dark */
+    --accent: 16 100% 64%; /* Slightly adjusted Coral for better visibility */
+    --accent-foreground: 0 0% 100%; /* White for contrast on coral */
+    --destructive: 0 84.2% 60.2%; /* Keep default red */
+    --destructive-foreground: 0 0% 98%; /* Keep default */
+    --border: 214 20% 85%; /* Light gray border */
+    --input: 214 20% 90%; /* Slightly darker input background */
+    --ring: 16 100% 64%; /* Use accent for ring */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Animation Keyframes */
+    --animation-fade-in: fade-in 0.5s ease-out forwards;
+  }
+  .dark {
+    --background: 215 28% 17%; /* Dark grayish blue */
+    --foreground: 214 67% 98%; /* Off-white */
+    --card: 215 28% 17%; /* Dark */
+    --card-foreground: 214 67% 98%; /* Off-white */
+    --popover: 215 28% 17%; /* Dark */
+    --popover-foreground: 214 67% 98%; /* Off-white */
+    --primary: 195 35% 65%; /* Slightly darker Teal for dark mode */
+    --primary-foreground: 215 28% 10%; /* Very Dark for contrast on dark teal */
+    --secondary: 215 20% 25%; /* Darker secondary */
+    --secondary-foreground: 214 67% 98%; /* Off-white */
+    --muted: 215 20% 22%; /* Darker muted */
+    --muted-foreground: 215 15% 65%; /* Lighter muted text */
+    --accent: 16 100% 58%; /* Slightly muted Coral */
+    --accent-foreground: 0 0% 100%; /* White */
+    --destructive: 0 62.8% 30.6%; /* Keep default */
+    --destructive-foreground: 0 0% 98%; /* Keep default */
+    --border: 215 15% 30%; /* Darker border */
+    --input: 215 15% 35%; /* Darker input */
+    --ring: 16 100% 58%; /* Use accent for ring */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Subtle gradient background */
+    /* background-image: linear-gradient(to bottom right, hsl(var(--background)), hsl(var(--secondary))); */
+  }
+}
+
+/* Add custom fade-in animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
