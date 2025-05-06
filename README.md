@@ -76,7 +76,7 @@ Para iniciar el entorno de desarrollo, sigue estos pasos:
 
 ## Próximos Pasos / Mejoras
 
--   Implementar el envío real de notificaciones por email.
+-   Impleementar el envío real de notificaciones por email.
 -   Guardar la configuración del horario laboral del admin en Firestore.
 -   Añadir pruebas unitarias e integrales.
 -   Mejorar la accesibilidad (ARIA).
